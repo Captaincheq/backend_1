@@ -1,6 +1,14 @@
 {
   "name": "backend_1",
   "version": "0.1.0",
+  "description": "main app",
+  "author": "Alec Mabhiza Chirawu",
+  "repository": {
+    "git": "git",
+    "url": "https://github.com/Captaincheq/backend_1.git",
+    "directory": "backend_1/app.js"
+  },
+
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
