@@ -17,9 +17,9 @@
   },
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "scripts": {
-    "start": "serve -s build",
+    //"start": "serve -s build",
     //for deploying on Heroku changing start
-    //"start": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
