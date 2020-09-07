@@ -5,11 +5,9 @@
   "description": "main app",
   "author": "Alec Mabhiza Chirawu",
   "repository": {
-    "git": "git",
-    "url": "git+https://github.com/Captaincheq/backend_1.git",
-    "directory": "backend_1/app.js"
+    "git": "git"
   },
-  "private": false,
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -23,14 +21,11 @@
     "serve": "^11.3.2",
     "tachyons": "^4.12.0"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "version": "0.1.0",
-    "name": "backend_1",
-    "main": "index.js"
-  },
+
   "scripts": {
-    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "node index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -52,10 +47,5 @@
   },
   "devDependencies": {
     "gh-pages": "^3.1.0"
-  },
-  "bugs": {
-    "url": "https://github.com/Captaincheq/backend_1/issues"
-  },
-  "main": "index.js",
-  "license": "ISC"
+  }
 }
